@@ -1,0 +1,48 @@
+mixin product-card(imgsrc, name, price)
+	.catalog__item
+		a.catalog__img(style='background-image:url(./img/' + imgsrc +')')
+		.catalog__desc
+			a.catalog__name(href="")= name
+			.catalog__variants.variants
+				.variants-name Фасовка: 
+				.variants-items 
+					.variants-item 5 кг
+					.variants-item 15 кг
+			a.button.button_white.button_full.button_to-order.open-popup-link(href="" data-mfp-src="#order-popup") ЗАКАЗАТЬ
+
+mixin list-links (...items)
+	ul
+		each item in items
+			li
+				a(href="")= item
+mixin list (...items)
+	ul
+		each item in items
+			li= item
+mixin custom-checkbox(text)
+	label.custom-checkbox
+		input.custom-checkbox__checkbox(type="checkbox" name="")
+		span.custom-checkbox__span
+		span.custom-checkbox__label= text
+//- mixin custom-checkbox_orange(text)
+//- 	label.custom-checkbox.custom-checkbox_orange
+//- 		input.custom-checkbox__checkbox(type="checkbox" name="")
+//- 		span.custom-checkbox__span
+//- 		span.custom-checkbox__label= text
+mixin svg(name)
+	svg&attributes(attributes)
+		use(xlink:href=`./img/sprite.svg#${name}`)
+//- mixin news(imgsrc, category, name, preview, views)
+//- 	.news__item
+//- 		a.news__img(style='background-image:url(./img/' + imgsrc +')')
+//- 		.news__desc
+//- 			.accent-category.news__category= category
+//- 			a.news__name(href="")= name
+//- 			.news__preview= preview
+//- 			.news__views
+//- 				+svg("eye")
+//- 				span= views
+//- mixin switch 
+//- 	label.switch
+//- 		input(type="checkbox")
+//- 		span.switch__slider
