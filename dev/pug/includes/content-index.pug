@@ -1,7 +1,7 @@
 main.main-form
 	.container
 		.main-form__grid_columns.main-form__grid_columns_2
-			.main-form__inner.main-form__inner_row
+			.main-form__inner.main-form__inner_40
 				.main-form__title Заголовок формы
 				.main-form__fields
 					.main-form__block
@@ -17,73 +17,77 @@ main.main-form
 						label.main-form__label Клиент/Потенц. клиент:
 						input.main-form__input(type="text" placeholder="" value="" name="")
 					.main-form__block
-						label.main-form__label Клиент/Потенц. клиент:
-						textarea.main-form__textarea
-			.main-form__inner
-				.main-form__title ОЦЕНКА МОЕЙ ТЕКУЩЕЙ ПОЗИЦИИ
-				.main-form__fields
-					.main-form__block.main-form__block_flex
-						label.custom-radio
-							input.custom-radio__radio(name="" type="radio" value="")
-							span.custom-radio__span
-							span.custom-radio__label Эйфория
-						label.custom-radio
-							input.custom-radio__radio(name="" type="radio" value="")
-							span.custom-radio__span
-							span.custom-radio__label Отлично
-						label.custom-radio
-							input.custom-radio__radio(name="" type="radio" value="")
-							span.custom-radio__span
-							span.custom-radio__label Надежно
-						label.custom-radio
-							input.custom-radio__radio(name="" type="radio" value="")
-							span.custom-radio__span
-							span.custom-radio__label Комфортно
-						label.custom-radio
-							input.custom-radio__radio(name="" type="radio" value="")
-							span.custom-radio__span
-							span.custom-radio__label Ок
-						label.custom-radio
-							input.custom-radio__radio(name="" type="radio" value="")
-							span.custom-radio__span
-							span.custom-radio__label Беспокойно
-						label.custom-radio
-							input.custom-radio__radio(name="" type="radio" value="")
-							span.custom-radio__span
-							span.custom-radio__label Дискомфорт
-						label.custom-radio
-							input.custom-radio__radio(name="" type="radio" value="")
-							span.custom-radio__span
-							span.custom-radio__label Тревожно
-						label.custom-radio
-							input.custom-radio__radio(name="" type="radio" value="")
-							span.custom-radio__span
-							span.custom-radio__label Страшно
-						label.custom-radio
-							input.custom-radio__radio(name="" type="radio" value="")
-							span.custom-radio__span
-							span.custom-radio__label Паника
-			.main-form__inner
-				.main-form__title КОНКУРЕНЦИЯ
-				.main-form__fields
-					.main-form__block
-						label.main-form__label Тип конкуренции:
-						input.main-form__input(type="text" placeholder="" value="" name="")
-					.main-form__block
-						label.main-form__label Опишите конкурента (ов):
+						label.main-form__label Текущий объем продаж:
 						textarea.main-form__textarea
 					.main-form__block
-						label.main-form__label Позиция по отношению к конкурентам:
-						input.main-form__input(type="text" placeholder="" value="" name="")
-					.main-form__block
-						label.main-form__label Позиция в воронке продаж:
-						input.main-form__input(type="text" placeholder="" value="" name="")
-					.main-form__block
-						label.main-form__label Планирование времени и приоритетов:
-						input.main-form__input(type="text" placeholder="" value="" name="")
+						label.main-form__label Потенциальный объем:
+						textarea.main-form__textarea
+			.main-form__grid_columns.main-form__grid_columns_column
+				.main-form__inner
+					.main-form__title ОЦЕНКА МОЕЙ ТЕКУЩЕЙ ПОЗИЦИИ
+					.main-form__fields
+						.main-form__block.main-form__block_flex
+							label.custom-radio
+								input.custom-radio__radio(name="" type="radio" value="")
+								span.custom-radio__span
+								span.custom-radio__label Эйфория
+							label.custom-radio
+								input.custom-radio__radio(name="" type="radio" value="")
+								span.custom-radio__span
+								span.custom-radio__label Отлично
+							label.custom-radio
+								input.custom-radio__radio(name="" type="radio" value="")
+								span.custom-radio__span
+								span.custom-radio__label Надежно
+							label.custom-radio
+								input.custom-radio__radio(name="" checked type="radio" value="")
+								span.custom-radio__span
+								span.custom-radio__label Комфортно
+							label.custom-radio
+								input.custom-radio__radio(name="" type="radio" value="")
+								span.custom-radio__span
+								span.custom-radio__label Ок
+							label.custom-radio
+								input.custom-radio__radio(name="" type="radio" value="")
+								span.custom-radio__span
+								span.custom-radio__label Беспокойно
+							label.custom-radio
+								input.custom-radio__radio(name="" type="radio" value="")
+								span.custom-radio__span
+								span.custom-radio__label Дискомфорт
+							label.custom-radio
+								input.custom-radio__radio(name="" type="radio" value="")
+								span.custom-radio__span
+								span.custom-radio__label Тревожно
+							label.custom-radio
+								input.custom-radio__radio(name="" type="radio" value="")
+								span.custom-radio__span
+								span.custom-radio__label Страшно
+							label.custom-radio
+								input.custom-radio__radio(name="" type="radio" value="")
+								span.custom-radio__span
+								span.custom-radio__label Паника
+				.main-form__inner
+					.main-form__title КОНКУРЕНЦИЯ
+					.main-form__fields
+						.main-form__block
+							label.main-form__label Тип конкуренции:
+							input.main-form__input(type="text" placeholder="" value="" name="")
+						.main-form__block
+							label.main-form__label Опишите конкурента (ов):
+							textarea.main-form__textarea
+						.main-form__block
+							label.main-form__label Позиция по отношению к конкурентам:
+							input.main-form__input(type="text" placeholder="" value="" name="")
+						.main-form__block
+							label.main-form__label Позиция в воронке продаж:
+							input.main-form__input(type="text" placeholder="" value="" name="")
+						.main-form__block
+							label.main-form__label Планирование времени и приоритетов:
+							input.main-form__input(type="text" placeholder="" value="" name="")
 		.hr
 		.main-form__grid_columns.main-form__grid_columns_2
-			.main-form__inner.main-form__inner_row
+			.main-form__inner.main-form__inner_40
 				.main-form__title ЕДИНИЧНАЯ ЦЕЛЬ ПРОДАЖИ
 				.main-form__fields
 					.main-form__block
@@ -95,7 +99,7 @@ main.main-form
 					.main-form__block
 						label.main-form__label Дата закрытия:
 						input.main-form__input(type="text" placeholder="" value="" name="")
-			.main-form__inner.main-form__inner_row
+			.main-form__inner
 				.main-form__title КРИТЕРИИ ИДЕАЛЬНОГО КЛИЕНТА
 					span (Оцените критерии. 0 или 20)
 				.main-form__fields.main-form__fields_3
@@ -116,64 +120,72 @@ main.main-form
 						input.main-form__input(type="text" placeholder="" value="" name="")
 		.hr
 		.main-form__inner
-			.main-form__grid_columns.main-form__grid_columns_2
-				.main-form__wrapper
-					.main-form__title ВОВЛЕЧЕННЫЕ ПОКУПАТЕЛИ
-					.main-form__fields
+			.main-form__wrapper
+				.main-form__title ВОВЛЕЧЕННЫЕ ПОКУПАТЕЛИ
+				.main-form__fields
+					.main-form__fields_line
 						.main-form__block
 							label.main-form__label Имя, Должность, Подразделение
-							textarea.main-form__textarea
+							input.main-form__input(type="text" placeholder="" value="" name="")
 						.main-form__block
 							label.main-form__label Роль
-							textarea.main-form__textarea.main-form__textarea_min
+							input.main-form__input(type="text" placeholder="" value="" name="")
 						.main-form__block
 							label.main-form__label Уровень влияния
-							textarea.main-form__textarea.main-form__textarea_min
+							input.main-form__input(type="text" placeholder="" value="" name="")
 						.main-form__block
 							label.main-form__label Режим
-							textarea.main-form__textarea.main-form__textarea_min
-						.main-form__add-buyer 
-							span Добавить покупателя 
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#346AFE" /><path d="M12 5L12 19" stroke="white" stroke-linecap="round" />  <path d="M19 12H5" stroke="white" stroke-linecap="round" /></svg>
-
-				.main-form__wrapper
-					.main-form__title КЛЮЧЕВЫЕ ВЫИГРЫШИ И РЕЗУЛЬТАТЫ  ПОКУПАТЕЛЕЙ
-					.main-form__fields
-						.main-form__block
-							label.main-form__label Короткая формулировка персональных Выигрышей, которые получает<br>Покупатель при достижении важных, измеримых бизнес Результатов.
-							textarea.main-form__textarea
-						.main-form__block
-							label.main-form__label Рейтинг (-5 to +5)
 							input.main-form__input(type="text" placeholder="" value="" name="")
-					.main-form__title НАСКОЛЬКО ХОРОШО ПОКРЫТА БАЗА?
-					.main-form__fields
-						.main-form__block
-							label.main-form__label Свидетельства в пользу рейтинга
-							textarea.main-form__textarea
+					.main-form__add-buyer
+						span Добавить покупателя
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#346AFE" /><path d="M12 5L12 19" stroke="white" stroke-linecap="round" />  <path d="M19 12H5" stroke="white" stroke-linecap="round" /></svg>
+				.main-form__grid_columns
+					.main-form__wrapper.main-form__wrapper_49
+						.main-form__title КЛЮЧЕВЫЕ ВЫИГРЫШИ И РЕЗУЛЬТАТЫ  ПОКУПАТЕЛЕЙ
+						.main-form__fields.main-form__fields_2.nopad-right
+							.main-form__block
+								label.main-form__label Короткая формулировка персональных Выигрышей, которые получает Покупатель при достижении важных, измеримых бизнес Результатов.
+								textarea.main-form__textarea
+							.main-form__block
+								label.main-form__label Рейтинг (-5 to +5)
+								input.main-form__input(type="text" placeholder="" value="" name="")
+							.main-form__add-buyer
+								span Добавить покупателя
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#346AFE" /><path d="M12 5L12 19" stroke="white" stroke-linecap="round" />  <path d="M19 12H5" stroke="white" stroke-linecap="round" /></svg>
+					.main-form__wrapper.main-form__wrapper_49
+						.main-form__title НАСКОЛЬКО ХОРОШО ПОКРЫТА БАЗА?
+						.main-form__fields
+							.main-form__block
+								label.main-form__label Свидетельства в пользу рейтинга
+								textarea.main-form__textarea
 		.hr
 		.main-form__inner
-			.main-form__grid_columns.main-form__grid_columns_2
-				.main-form__wrapper
+			.main-form__grid_columns
+				.main-form__wrapper.main-form__wrapper_49
 					.main-form__title ИТОГ МОЕЙ ТЕКУЩЕЙ ПОЗИЦИИ
-					.main-form__fields
+					.main-form__fields.nopad-right
 						.main-form__block
 							label.main-form__label
 								span.circle-blue
 								| СИЛЬНЫЕ СТОРОНЫ
-							textarea.main-form__textarea
+							input.main-form__input(type="text" placeholder="" value="" name="")
 						.main-form__block
 							label.main-form__label
 								span.circle-red
 								| СИЛЬНЫЕ СТОРОНЫ
+							input.main-form__input(type="text" placeholder="" value="" name="")
+				.main-form__wrapper.main-form__wrapper_27
+					.main-form__title.nopad-right.nopad-left ВОЗМОЖНЫЕ ДЕЙСТВИЯ
+					.main-form__fields.nopad-right.nopad-left
+						.main-form__block
+							label.main-form__label Хорошая стратегия использует Сильные стороны для устранения или снижения влияния Красных флагов.
+							textarea.main-form__textarea
+						.main-form__block.main-form__block_column-2
+							label.main-form__label Необходимая информация
 							textarea.main-form__textarea
 				.main-form__wrapper
-					.main-form__title ВОЗМОЖНЫЕ ДЕЙСТВИЯ
-					.main-form__fields
-						.main-form__block
-							label.main-form__label Хорошая стратегия использует Сильные стороны<br>для устранения или снижения влияния Красных флагов.
-							textarea.main-form__textarea
-					.main-form__title НАИЛУЧШИЙ ПЛАН ДЕЙСТВИЙ
-					.main-form__fields.main-form__fields_3
+					.main-form__title.nopad-left НАИЛУЧШИЙ ПЛАН ДЕЙСТВИЙ
+					.main-form__fields.main-form__fields_3.nopad-left
 						.main-form__block
 							label.main-form__label Что
 							input.main-form__input(type="text" placeholder="" value="" name="")
@@ -183,9 +195,6 @@ main.main-form
 						.main-form__block
 							label.main-form__label Когда
 							input.main-form__input(type="text" placeholder="" value="" name="")
-						.main-form__block.main-form__block_column-2
-							label.main-form__label Необходимая информация
-							textarea.main-form__textarea
 						.main-form__block
 							label.main-form__label От кого
 							input.main-form__input(type="text" placeholder="" value="" name="")

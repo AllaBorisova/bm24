@@ -79,12 +79,18 @@ body {
   }
 
   &__grid_columns {
-    display: grid;
-    gap: 4%;
+    display:flex;
+    gap:40px;
+    // display: grid;
+    // gap: 4%;
+    // grid-template-columns: 1fr;
 
     &_2 {
-      grid-template-columns: 40% 56%;
-      gap: 4%;
+      // grid-template-columns: 40% 56%;
+      // gap: 4%;
+    }
+    &_column{
+      flex-direction: column;
     }
   }
 
@@ -93,8 +99,9 @@ body {
     background: #fff;
     border-radius: 12px;
 
-    &_row {
-      grid-row: span 2;
+    &_40 {
+      width:41%;
+      flex:none;
     }
   }
 
@@ -117,16 +124,28 @@ body {
 
   &__fields {
     padding: 35px;
-    padding-right: 95px;
+    // padding-right: 95px;
     display: flex;
     flex-direction: column;
     gap: 35px;
-
+    &_2 {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
     &_3 {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       align-items: flex-end;
+      // padding-right: 35px;
     }
+    &_line{
+      display:flex;
+      gap:25px;
+      .main-form__block{
+        flex:1
+      }
+    }
+    
   }
 
   &__block {
@@ -140,6 +159,15 @@ body {
     &_column-2{
       grid-column: span 2;
     }
+  }
+  &__wrapper{
+    &_49{
+      width:49%;
+    }
+    &_27{
+      width: 27%;
+    }
+    
   }
 
   &__label {
@@ -169,7 +197,7 @@ body {
     border-radius: 0;
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 10px;
-    height: 130px;
+    height: 100px;
     display: block;
 
     &_min {
@@ -189,7 +217,14 @@ body {
     cursor:pointer;
 
   }
-
+.nopad-right{
+      padding-right: 0;
+     
+    }
+    .nopad-left{
+      padding-left: 0;
+      
+    }
 
 .circle-blue{
   width:14px;
@@ -294,6 +329,6 @@ body {
 }
 
 .custom-radio__radio:checked+.custom-radio__span+.custom-radio__label {
-  color: #346afe;
+  // color: #346afe;
 }
 }
