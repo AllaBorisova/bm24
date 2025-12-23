@@ -161,36 +161,26 @@ main.main-form
 		.hr
 		.main-form__inner
 			.main-form__grid_columns
-				.main-form__wrapper.main-form__wrapper_49
+				.main-form__wrapper.main-form__wrapper_40
 					.main-form__title ИТОГ МОЕЙ ТЕКУЩЕЙ ПОЗИЦИИ
+				.main-form__wrapper.main-form__wrapper_20
+					.main-form__title.nopad-right.nopad-left ВОЗМОЖНЫЕ ДЕЙСТВИЯ
+				.main-form__wrapper.main-form__wrapper_40
+					.main-form__title.nopad-left НАИЛУЧШИЙ ПЛАН ДЕЙСТВИЙ
+			.main-form__grid_columns
+				.main-form__wrapper.main-form__wrapper_40
 					.main-form__fields.nopad-right
 						.main-form__block
 							label.main-form__label.main-form__label_noclick
 								span.circle-blue
 								| СИЛЬНЫЕ СТОРОНЫ
 							input.main-form__input(type="text" placeholder="" value="" name="")
-							.main-form__add-buyer#add-strong
-								span Добавить
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#346AFE" /><path d="M12 5L12 19" stroke="white" stroke-linecap="round" />  <path d="M19 12H5" stroke="white" stroke-linecap="round" /></svg>
-						.main-form__block
-							label.main-form__label.main-form__label_noclick
-								span.circle-red
-								| КРАСНЫЕ ФЛАГИ
-							input.main-form__input(type="text" placeholder="" value="" name="")
-							.main-form__add-buyer#add-red
-								span Добавить
-								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#346AFE" /><path d="M12 5L12 19" stroke="white" stroke-linecap="round" />  <path d="M19 12H5" stroke="white" stroke-linecap="round" /></svg>
-				.main-form__wrapper.main-form__wrapper_27
-					.main-form__title.nopad-right.nopad-left ВОЗМОЖНЫЕ ДЕЙСТВИЯ
+				.main-form__wrapper.main-form__wrapper_20
 					.main-form__fields.nopad-right.nopad-left
 						.main-form__block
 							label.main-form__label &nbsp;
 							input.main-form__input(type="text" placeholder="" value="" name="")
-						.main-form__block.main-form__block_column-2
-							label.main-form__label Необходимая информация
-							input.main-form__input(type="text" placeholder="" value="" name="")
-				.main-form__wrapper
-					.main-form__title.nopad-left НАИЛУЧШИЙ ПЛАН ДЕЙСТВИЙ
+				.main-form__wrapper.main-form__wrapper_40
 					.main-form__fields.main-form__fields_3.nopad-left
 						.main-form__block
 							label.main-form__label Что
@@ -201,6 +191,27 @@ main.main-form
 						.main-form__block
 							label.main-form__label Когда
 							input.main-form__input(type="text" placeholder="" value="" name="")
+			.main-form__add-buyer#add-strong
+				span Добавить
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#346AFE" /><path d="M12 5L12 19" stroke="white" stroke-linecap="round" />  <path d="M19 12H5" stroke="white" stroke-linecap="round" /></svg>
+			.main-form__grid_columns
+				.main-form__wrapper.main-form__wrapper_40
+					.main-form__fields.nopad-right
+						.main-form__block
+							label.main-form__label.main-form__label_noclick
+								span.circle-red
+								| КРАСНЫЕ ФЛАГИ
+							input.main-form__input(type="text" placeholder="" value="" name="")
+				.main-form__wrapper.main-form__wrapper_20
+					.main-form__fields.nopad-right.nopad-left
+						.main-form__block.main-form__block_column-2
+							label.main-form__label Необходимая информация
+							input.main-form__input(type="text" placeholder="" value="" name="")
+				.main-form__wrapper.main-form__wrapper_40
+					.main-form__fields.main-form__fields_3.nopad-left
 						.main-form__block
 							label.main-form__label От кого
 							input.main-form__input(type="text" placeholder="" value="" name="")
+			.main-form__add-buyer#add-red
+				span Добавить
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="12" fill="#346AFE" /><path d="M12 5L12 19" stroke="white" stroke-linecap="round" />  <path d="M19 12H5" stroke="white" stroke-linecap="round" /></svg>

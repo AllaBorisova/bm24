@@ -18,14 +18,14 @@ const buttonStrong = document.querySelector('#add-strong');
 buttonStrong.addEventListener('click', function (e) {
   this.insertAdjacentHTML(
     'beforebegin',
-    '<label class="main-form__label">СИЛЬНЫЕ СТОРОНЫ</label><input class="main-form__input" type="text" placeholder="" value="" name="">'
+    '<div class="main-form__grid_columns"><div class="main-form__wrapper main-form__wrapper_40"><div class="main-form__fields nopad-right nopad-top"><div class="main-form__block"><label class="main-form__label main-form__label_noclick"><span class="circle-blue"></span>СИЛЬНЫЕ СТОРОНЫ</label><input class="main-form__input" type="text" placeholder="" value="" name=""></div></div></div><div class="main-form__wrapper main-form__wrapper_20"><div class="main-form__fields nopad-right nopad-left nopad-top"><div class="main-form__block"><label class="main-form__label">&nbsp;</label><input class="main-form__input" type="text" placeholder="" value="" name=""></div></div></div><div class="main-form__wrapper main-form__wrapper_40"><div class="main-form__fields main-form__fields_3 nopad-left nopad-top"><div class="main-form__block"><label class="main-form__label">Что</label><input class="main-form__input" type="text" placeholder="" value="" name=""></div><div class="main-form__block"><label class="main-form__label">Кто</label><input class="main-form__input" type="text" placeholder="" value="" name=""></div><div class="main-form__block"><label class="main-form__label">Когда</label><input class="main-form__input" type="text" placeholder="" value="" name=""></div></div></div></div>'
   );
 });
 const buttonRed = document.querySelector('#add-red');
 buttonRed.addEventListener('click', function (e) {
   this.insertAdjacentHTML(
     'beforebegin',
-    '<label class="main-form__label">КРАСНЫЕ ФЛАГИ</label><input class="main-form__input" type="text" placeholder="" value="" name="">'
+    '<div class="main-form__grid_columns"><div class="main-form__wrapper main-form__wrapper_40"><div class="main-form__fields nopad-right nopad-top"><div class="main-form__block"><label class="main-form__label main-form__label_noclick"><span class="circle-red"></span>КРАСНЫЕ ФЛАГИ</label><input class="main-form__input" type="text" placeholder="" value="" name=""></div></div></div><div class="main-form__wrapper main-form__wrapper_20"><div class="main-form__fields nopad-right nopad-left nopad-top"><div class="main-form__block main-form__block_column-2"><label class="main-form__label">Необходимая информация</label><input class="main-form__input" type="text" placeholder="" value="" name=""></div></div></div><div class="main-form__wrapper main-form__wrapper_40"><div class="main-form__fields main-form__fields_3 nopad-left nopad-top"><div class="main-form__block"><label class="main-form__label">От кого</label><input class="main-form__input" type="text" placeholder="" value="" name=""></div></div></div></div>'
   );
 });
 // const labels = document.querySelectorAll( '.main-form__label' );
