@@ -30,7 +30,7 @@ buttonRed.addEventListener('click', function (e) {
 });
 // const labels = document.querySelectorAll( '.main-form__label' );
 document.addEventListener('click', function (e) {
-  if (e.target.classList.contains('main-form__label')) {
+  if (e.target.classList.contains('main-form__label') && ! e.target.classList.contains('main-form__label_noclick')) {
     if (e.target.classList.contains('active-red')) {
       e.target.classList.remove('active-red');
       e.target.classList.add('active-blue');
