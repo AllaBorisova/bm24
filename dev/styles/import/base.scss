@@ -184,6 +184,9 @@ body {
     &_62 {
       width: 62%;
     }
+    &_38 {
+      width: 38%;
+    }
 
     &_27 {
       width: 27%;
@@ -281,10 +284,10 @@ body {
     padding-left: 0;
   }
 
-  #add-strong, #add-red{
+  #add-strong, #add-red, #add-key{
     margin-left: 35px;
   }
-  #add-red{
+  #add-red, #add-key{
     padding-bottom: 35px;
   }
 

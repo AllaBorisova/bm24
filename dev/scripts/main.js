@@ -10,7 +10,7 @@ const buttonKey = document.querySelector('#add-key');
 buttonKey.addEventListener('click', function (e) {
   this.insertAdjacentHTML(
     'beforebegin',
-    '<div class="main-form__block"><label class="main-form__label">Короткая формулировка персональных Выигрышей, которые получает Покупатель при достижении важных, измеримых бизнес Результатов.</label><textarea class="main-form__textarea"></textarea></div><div class="main-form__block"><label class="main-form__label">Рейтинг (-5 to +5)</label><input class="main-form__input" type="text" placeholder="" value="" name=""></div>'
+    '<div class="main-form__grid_columns"><div class="main-form__wrapper main-form__wrapper_62"><div class="main-form__fields main-form__fields_2 nopad-right"><div class="main-form__block"><label class="main-form__label">Короткая формулировка персональных Выигрышей, которые получает Покупатель при достижении важных, измеримых бизнес Результатов.</label><textarea class="main-form__textarea"></textarea></div><div class="main-form__block"><label class="main-form__label main-form__label_2">Рейтинг (-5 to +5)</label><input class="main-form__input" type="text" placeholder="" value="" name=""></div></div></div><div class="main-form__wrapper main-form__wrapper_38"><div class="main-form__fields"><div class="main-form__block"><label class="main-form__label main-form__label_2">Свидетельства в пользу рейтинга</label><textarea class="main-form__textarea"></textarea></div></div></div></div>'
   );
 } );
 
