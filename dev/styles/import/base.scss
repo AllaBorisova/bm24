@@ -130,6 +130,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    gap: 33px;
 
     &_2 {
       display: grid;
@@ -140,7 +141,12 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       align-items: flex-end;
-      // padding-right: 35px;
+      &-2{
+        grid-template-columns: 1fr 2fr;
+      }
+      &-top{
+        align-items: flex-start;
+      }
     }
 
     &_line {
@@ -337,10 +343,16 @@ body {
     padding-bottom: 35px;
   }
 
-  .main-form__input+.main-form__add-buyer {
+  .main-form__input + .main-form__add-buyer {
     margin-top: 12px;
   }
-  .main-form__input+.main-form__label {
+  .main-form__input + .main-form__label {
+    margin-top: 12px;
+  }
+  .main-form__label + .main-form__block_flex{
+    margin-top: 12px;
+  }
+  .main-form__input + .main-form__input{
     margin-top: 12px;
   }
 
@@ -362,6 +374,10 @@ body {
     margin: 50px 0;
     border-top: 1px solid #ccc;
     grid-column: 2;
+    &_min{
+      margin:0;
+      grid-column: auto;
+    }
   }
 
   .custom-radio {
@@ -381,18 +397,10 @@ body {
     position: relative;
     width: 18px;
     height: 18px;
-    border: 1px solid #000;
+    border: 1px solid #C0C0C0;
     border-radius: 999px;
     cursor: pointer;
     background: none;
-  }
-
-  @media (max-width: 767px) {
-    .custom-radio__span {
-      // width: 2rem;
-      // height: 2rem;
-      // border-width: 1.67px;
-    }
   }
 
   .custom-radio__span,
@@ -400,15 +408,23 @@ body {
     display: block;
   }
 
-  .custom-radio__span {
-    // margin-top: 0.2rem;
-  }
-
   .custom-radio__label {
     color: #000;
     font-size: 16px;
     line-height: 130%;
     letter-spacing: -0.03em;
+
+  }
+  .custom-radio__span::before{
+     content: "";
+      display: block;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 99px;
+      background: #C0C0C0;
+      left: 2px;
+      top: 2px;
   }
 
   @media (max-width: 767px) {
@@ -430,15 +446,8 @@ body {
   }
 
   .custom-radio__radio:checked+.custom-radio__span::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 99px;
     background: #346afe;
-    left: 2px;
-    top: 2px;
+
   }
 
   @media (max-width: 767px) {
