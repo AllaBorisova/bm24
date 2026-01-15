@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css">
+  </head>
+  <body>
+    <div class="page-flex">
+      <main class="main-form">
+        <div class="container">
+          <div class="main-form__inner">
+            <div class="main-form__wrapper">
+              <div class="main-form__title">ЗАПРОС НА ТКП (ЗТКП) РТО</div>
+              <div class="main-form__fields main-form__fields_3 nopad-bottom">
+                <div class="main-form__block">
+                  <label class="main-form__label text-bold">1. * Общие данные</label>
+                </div>
+              </div>
+              <div class="main-form__fields main-form__fields_3 main-form__fields_3-top nopad-top">
+                <div class="main-form__block">
+                  <label class="main-form__label">Дата</label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="">
+                </div>
+                <div class="main-form__block">
+                  <label class="main-form__label">Номер заявки</label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="">
+                </div>
+                <div class="main-form__block">
+                  <label class="main-form__label">Менеджер</label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="">
+                  <div class="main-form__ps">указать название и место расположения объекта</div>
+                </div>
+              </div>
+              <div class="main-form__fields main-form__fields_3 nopad-all">
+                <div class="hr hr_min"></div>
+                <div class="hr hr_min"></div>
+                <div class="hr hr_min"></div>
+              </div>
+              <div class="main-form__fields main-form__fields_3 main-form__fields_3-top">
+                <div class="main-form__block">
+                  <label class="main-form__label">Наименование продукта на объекте (заполняется менеджером)</label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="">
+                  <div class="main-form__ps">указать наименование оборудования (например, БКТП, КТП, РУ 10)</div>
+                </div>
+                <div class="main-form__block">
+                  <label class="main-form__label">Наименование объекта</label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="">
+                  <div class="main-form__ps">указать название и место расположения объекта</div>
+                </div>
+                <div class="main-form__block">
+                  <label class="main-form__label">Запрос (ЗТКП)</label>
+                  <div class="main-form__block_flex">
+                    <div class="main-form__block_flex main-form__block_flex-column">
+                      <label class="custom-radio">
+                        <input class="custom-radio__radio" name="order1" type="radio" value="" checked><span class="custom-radio__span"></span><span class="custom-radio__label">Первичный</span>
+                      </label>
+                      <label class="custom-radio">
+                        <input class="custom-radio__radio" name="order1" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Повторный</span>
+                      </label>
+                    </div>
+                    <div class="main-form__block_flex main-form__block_flex-column">
+                      <label class="custom-radio">
+                        <input class="custom-radio__radio" name="order2" type="radio" value="" checked><span class="custom-radio__span"></span><span class="custom-radio__label">Смета</span>
+                      </label>
+                      <label class="custom-radio">
+                        <input class="custom-radio__radio" name="order2" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Точный расчет</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="main-form__fields main-form__fields_3 nopad-all">
+                <div class="hr hr_min"></div>
+                <div class="hr hr_min"></div>
+                <div class="hr hr_min"></div>
+              </div>
+              <div class="main-form__fields main-form__fields_3-top">
+                <div class="main-form__block">
+                  <label class="main-form__label">Приложение к ТКП</label>
+                  <div class="main-form__block_flex">
+                    <label class="custom-checkbox">
+                      <input class="custom-checkbox__checkbox" type="checkbox" name=""/><span class="custom-checkbox__span"></span><span class="custom-checkbox__label">Схемы</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input class="custom-checkbox__checkbox" type="checkbox" name=""/><span class="custom-checkbox__span"></span><span class="custom-checkbox__label">Компоновка</span>
+                    </label>
+                    <label class="custom-checkbox">
+                      <input class="custom-checkbox__checkbox" type="checkbox" name=""/><span class="custom-checkbox__span"></span><span class="custom-checkbox__label">Указать вес, габарит</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hr"></div>
+          <div class="main-form__inner">
+            <div class="main-form__wrapper">
+              <div class="main-form__fields main-form__fields_3 main-form__fields_3-2">
+                <div class="main-form__block">
+                  <label class="main-form__label text-bold">2. Тип корпуса по ТЗ Заказчика</label>
+                  <div class="main-form__block_flex">
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="type" type="radio" value="" checked><span class="custom-radio__span"></span><span class="custom-radio__label">ТП</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="type1" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">РТП</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="type1" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">РП</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="main-form__block">
+                  <label class="main-form__label">Приложением к запросу</label>
+                  <div class="main-form__block_flex">
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="order3" type="radio" value="" checked><span class="custom-radio__span"></span><span class="custom-radio__label">ТЗ без схем и компоновки</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="order3" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">ТЗ со схемами и компоновкой</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="order3" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Проект</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="main-form__fields main-form__fields_3 main-form__fields_3-2 nopad-all">
+                <div class="hr hr_min"></div>
+                <div class="hr hr_min"></div>
+              </div>
+              <div class="main-form__fields main-form__fields_3 main-form__fields_3-top">
+                <div class="main-form__block">
+                  <label class="main-form__label">Корпус</label>
+                  <div class="main-form__block_flex">
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="order4" type="radio" value="" checked><span class="custom-radio__span"></span><span class="custom-radio__label">Бетон</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="order4" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Сэндвич</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="order4" type="radio" value="" checked><span class="custom-radio__span"></span><span class="custom-radio__label">КТП цинк</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="order4" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">КТП сварка</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="order4" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Вн.устан.</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="main-form__fields main-form__fields_3 nopad-all">
+                <div class="hr hr_min"></div>
+                <div class="hr hr_min"></div>
+                <div class="hr hr_min"></div>
+              </div>
+              <div class="main-form__fields main-form__fields_3 main-form__fields_3-top">
+                <div class="main-form__block">
+                  <label class="custom-radio">
+                    <input class="custom-radio__radio change-radio" name="" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Габарит согласно ТЗ/проекта</span>
+                  </label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="" disabled>
+                </div>
+                <div class="main-form__block">
+                  <label class="custom-radio">
+                    <input class="custom-radio__radio change-radio" name="" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Возможно изменение габарита</span>
+                  </label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="" disabled>
+                  <div class="main-form__ps">указать требования по габариту</div>
+                </div>
+                <div class="main-form__block">
+                  <label class="custom-radio">
+                    <input class="custom-radio__radio change-radio" name="" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Предложить аналог</span>
+                  </label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="" disabled>
+                  <div class="main-form__ps">указать наименование производителя</div>
+                </div>
+                <div class="main-form__block">
+                  <label class="custom-radio">
+                    <input class="custom-radio__radio change-radio" name="" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Чьё решение в проекте</span>
+                  </label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="" disabled>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hr"></div>
+          <div class="main-form__inner">
+            <div class="main-form__wrapper">
+              <div class="main-form__fields main-form__fields_3 nopad-bottom">
+                <div class="main-form__block">
+                  <label class="main-form__label text-bold">3. Тип РУВН по ТЗ Заказчика</label>
+                </div>
+              </div>
+              <div class="main-form__fields main-form__fields_3 main-form__fields_3-top nopad-bottom">
+                <div class="main-form__block">
+                  <label class="main-form__label main-form__label_between"><span class="text-bold">РУВН</span><span>Тип/производитель ВВ по ТЗ/проекту</span></label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="">
+                </div>
+                <div class="main-form__block">
+                  <label class="custom-radio">
+                    <input class="custom-radio__radio change-radio" name="" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Предложить аналог</span>
+                  </label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="">
+                  <div class="main-form__ps">указать наименование производителя</div>
+                </div>
+                <div class="main-form__block">
+                  <label class="custom-radio">
+                    <input class="custom-radio__radio change-radio" name="" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Наличие регистрации у вендора</span>
+                  </label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="">
+                  <div class="main-form__ps">указать наименование производителя</div>
+                </div>
+              </div>
+              <div class="main-form__fields main-form__fields_3 main-form__fields_3-top">
+                <div class="main-form__block">
+                  <div class="main-form__block_flex">
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="ruvn" type="radio" value="" checked><span class="custom-radio__span"></span><span class="custom-radio__label">RMЕ</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="ruvn" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">КРУ М4</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="ruvn" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">КСО 3 серии ВВ</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="ruvn" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">КСО 3 серии</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="ruvn" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">КРУ М4 Pro</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="ruvn" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">КСО 2 серии</span>
+                    </label>
+                    <label class="custom-radio">
+                      <input class="custom-radio__radio" name="ruvn" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Иное</span>
+                    </label>
+                    <input class="main-form__input" type="text" placeholder="" value="" name="">
+                  </div>
+                </div>
+                <div class="main-form__block">
+                  <label class="custom-radio">
+                    <input class="custom-radio__radio change-radio" name="" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Чьё решение в проекте</span>
+                  </label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="">
+                  <div class="main-form__ps">указать наименование производителя</div>
+                </div>
+                <div class="main-form__block">
+                  <label class="custom-radio">
+                    <input class="custom-radio__radio change-radio" name="" type="radio" value=""><span class="custom-radio__span"></span><span class="custom-radio__label">Тип защиты</span>
+                  </label>
+                  <input class="main-form__input" type="text" placeholder="" value="" name="">
+                  <div class="main-form__ps">указать наименование производителя</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-form__buttons">
+            <button class="main-form__button-apply" type="submit">Сохранить</button>
+            <button class="main-form__button-reset" type="reset">Закрыть</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

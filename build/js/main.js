@@ -50,7 +50,7 @@ const buttonEnvironment = document.querySelector('#add-environment');
 buttonEnvironment?.addEventListener('click', function (e) {
   this.insertAdjacentHTML(
     'beforebegin',
-    '<input class="main-form__input" type="text" placeholder="" value="" name="">'
+    '<div class="main-form__block-wrapper"><span></span><input class="main-form__input" type="text" placeholder="" value="" name=""></div>'
   );
 });
 
@@ -58,7 +58,7 @@ const buttonChoice = document.querySelector('#add-choice');
 buttonChoice?.addEventListener('click', function (e) {
   this.insertAdjacentHTML(
     'beforebegin',
-    '<input class="main-form__input" type="text" placeholder="" value="" name="">'
+    '<div class="main-form__block-wrapper"><span></span><input class="main-form__input" type="text" placeholder="" value="" name=""></div>'
   );
 });
 
@@ -66,6 +66,13 @@ const buttonReason = document.querySelector('#add-reason');
 buttonReason?.addEventListener('click', function (e) {
   this.insertAdjacentHTML(
     'beforebegin',
-    '<input class="main-form__input" type="text" placeholder="" value="" name="">'
+    '<div class="main-form__block-wrapper"><span></span><input class="main-form__input" type="text" placeholder="" value="" name=""></div>'
   );
-});
+} );
+
+const radioButtons = document.querySelectorAll('.change-radio');
+radioButtons?.forEach(function(radio) {
+    radio.addEventListener('change', function(e) {
+      e.target.closest('.custom-radio').nextElementSibling.removeAttribute('disabled');
+    });
+} );
