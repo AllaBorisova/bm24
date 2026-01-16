@@ -5,16 +5,16 @@ main.main-form
 				.main-form__title ЗАПРОС НА ТКП (ЗТКП) РТО
 				.main-form__fields.main-form__fields_3.nopad-bottom
 					.main-form__block
-						label.main-form__label.text-bold 1. * Общие данные
+						label.main-form__label.main-form__label_noclick.text-bold 1. * Общие данные
 				.main-form__fields.main-form__fields_3.main-form__fields_3-top.nopad-top
 					.main-form__block
-						label.main-form__label Дата
+						label.main-form__label.main-form__label_noclick Дата
 						input.main-form__input(type="text" placeholder="" value="" name="")
 					.main-form__block
-						label.main-form__label Номер заявки
+						label.main-form__label.main-form__label_noclick Номер заявки
 						input.main-form__input(type="text" placeholder="" value="" name="")
 					.main-form__block
-						label.main-form__label Менеджер
+						label.main-form__label.main-form__label_noclick Менеджер
 						input.main-form__input(type="text" placeholder="" value="" name="")
 						.main-form__ps указать название и место расположения объекта
 				.main-form__fields.main-form__fields_3.nopad-all
@@ -23,15 +23,15 @@ main.main-form
 					.hr.hr_min
 				.main-form__fields.main-form__fields_3.main-form__fields_3-top
 					.main-form__block
-						label.main-form__label Наименование продукта на объекте (заполняется менеджером)
+						label.main-form__label.main-form__label_noclick Наименование продукта на объекте (заполняется менеджером)
 						input.main-form__input(type="text" placeholder="" value="" name="")
 						.main-form__ps указать наименование оборудования (например, БКТП, КТП, РУ 10)
 					.main-form__block
-						label.main-form__label Наименование объекта
+						label.main-form__label.main-form__label_noclick Наименование объекта
 						input.main-form__input(type="text" placeholder="" value="" name="")
 						.main-form__ps указать название и место расположения объекта
 					.main-form__block
-						label.main-form__label Запрос (ЗТКП)
+						label.main-form__label.main-form__label_noclick Запрос (ЗТКП)
 						.main-form__block_flex
 							.main-form__block_flex.main-form__block_flex-column
 								label.custom-radio
@@ -57,7 +57,7 @@ main.main-form
 					.hr.hr_min
 				.main-form__fields.main-form__fields_3-top
 					.main-form__block
-						label.main-form__label Приложение к ТКП
+						label.main-form__label.main-form__label_noclick Приложение к ТКП
 						.main-form__block_flex
 							+custom-checkbox('Схемы')
 							+custom-checkbox('Компоновка')
@@ -67,7 +67,7 @@ main.main-form
 			.main-form__wrapper
 				.main-form__fields.main-form__fields_3.main-form__fields_3-2
 					.main-form__block
-						label.main-form__label.text-bold 2. Тип корпуса по ТЗ Заказчика
+						label.main-form__label.main-form__label_noclick.text-bold 2. Тип корпуса по ТЗ Заказчика
 						.main-form__block_flex
 							label.custom-radio
 								input.custom-radio__radio(name="type" type="radio" value="" checked)
@@ -82,7 +82,7 @@ main.main-form
 								span.custom-radio__span
 								span.custom-radio__label РП
 					.main-form__block
-						label.main-form__label Приложением к запросу
+						label.main-form__label.main-form__label_noclick Приложением к запросу
 						.main-form__block_flex
 							label.custom-radio
 								input.custom-radio__radio(name="order3" type="radio" value="" checked)
@@ -101,7 +101,7 @@ main.main-form
 					.hr.hr_min
 				.main-form__fields.main-form__fields_3.main-form__fields_3-top
 					.main-form__block
-						label.main-form__label Корпус
+						label.main-form__label.main-form__label_noclick Корпус
 						.main-form__block_flex
 							label.custom-radio
 								input.custom-radio__radio(name="order4" type="radio" value="" checked)
@@ -159,10 +159,10 @@ main.main-form
 			.main-form__wrapper
 				.main-form__fields.main-form__fields_3.nopad-bottom
 					.main-form__block
-						label.main-form__label.text-bold 3. Тип РУВН по ТЗ Заказчика
+						label.main-form__label.main-form__label_noclick.text-bold 3. Тип РУВН по ТЗ Заказчика
 				.main-form__fields.main-form__fields_3.main-form__fields_3-top.nopad-bottom
 					.main-form__block
-						label.main-form__label.main-form__label_between
+						label.main-form__label.main-form__label_noclick.main-form__label.main-form__label_between
 							span.text-bold РУВН
 							span Тип/производитель ВВ по ТЗ/проекту
 						input.main-form__input(type="text" placeholder="" value="" name="")
@@ -231,11 +231,11 @@ main.main-form
 			.main-form__wrapper
 				.main-form__fields.main-form__fields_3.nopad-bottom
 					.main-form__block
-						label.main-form__label.text-bold 4. Тип РУНН по ТЗ Заказчика
+						label.main-form__label.main-form__label_noclick.text-bold 4. Тип РУНН по ТЗ Заказчика
 				.main-form__fields.main-form__fields_3.main-form__fields_3-top
 					.main-form__block
 						.main-form__block
-							label.main-form__label.main-form__label_between
+							label.main-form__label.main-form__label_noclick.main-form__label.main-form__label_between
 								span.text-bold РУНН
 								span Тип/производитель ВВ по ТЗ/проекту
 							input.main-form__input(type="text" placeholder="" value="" name="")
@@ -258,7 +258,7 @@ main.main-form
 								span.custom-radio__label Иное
 							input.main-form__input(type="text" placeholder="" value="" name="")
 					.main-form__block
-						label.main-form__label Исполнение ВА
+						label.main-form__label.main-form__label_noclick Исполнение ВА
 						.main-form__block_flex
 							label.custom-radio
 								input.custom-radio__radio(name="isp" type="radio" value="" checked)
@@ -294,7 +294,7 @@ main.main-form
 							input.main-form__input(type="text" placeholder="" value="" name="")
 							.main-form__ps указать наименование производителя
 					.main-form__block
-						label.main-form__label Подключение силового трансформатора
+						label.main-form__label.main-form__label_noclick Подключение силового трансформатора
 						.main-form__block_flex
 							label.custom-radio
 								input.custom-radio__radio(name="pokl" type="radio" value="" checked)
@@ -324,25 +324,25 @@ main.main-form
 		//- 		.main-form__wrapper.main-form__wrapper_40
 		//- 			.main-form__fields.nopad-right
 		//- 				.main-form__block
-		//- 					label.main-form__label.main-form__label_noclick
+		//- 					label.main-form__label.main-form__label_noclick.main-form__label.main-form__label_noclick_noclick
 		//- 						span.circle-blue
 		//- 						| СИЛЬНЫЕ СТОРОНЫ
 		//- 					input.main-form__input(type="text" placeholder="" value="" name="")
 		//- 		.main-form__wrapper.main-form__wrapper_20
 		//- 			.main-form__fields.nopad-right.nopad-left
 		//- 				.main-form__block
-		//- 					label.main-form__label &nbsp;
+		//- 					label.main-form__label.main-form__label_noclick &nbsp;
 		//- 					input.main-form__input(type="text" placeholder="" value="" name="")
 		//- 		.main-form__wrapper.main-form__wrapper_40
 		//- 			.main-form__fields.main-form__fields_3.nopad-left
 		//- 				.main-form__block
-		//- 					label.main-form__label Что
+		//- 					label.main-form__label.main-form__label_noclick Что
 		//- 					input.main-form__input(type="text" placeholder="" value="" name="")
 		//- 				.main-form__block
-		//- 					label.main-form__label Кто
+		//- 					label.main-form__label.main-form__label_noclick Кто
 		//- 					input.main-form__input(type="text" placeholder="" value="" name="")
 		//- 				.main-form__block
-		//- 					label.main-form__label Когда
+		//- 					label.main-form__label.main-form__label_noclick Когда
 		//- 					input.main-form__input(type="text" placeholder="" value="" name="")
 		//- 	.main-form__add-buyer#add-strong
 		//- 		span Добавить
@@ -351,19 +351,19 @@ main.main-form
 		//- 		.main-form__wrapper.main-form__wrapper_40
 		//- 			.main-form__fields.nopad-right
 		//- 				.main-form__block
-		//- 					label.main-form__label.main-form__label_noclick
+		//- 					label.main-form__label.main-form__label_noclick.main-form__label.main-form__label_noclick_noclick
 		//- 						span.circle-red
 		//- 						| КРАСНЫЕ ФЛАГИ
 		//- 					input.main-form__input(type="text" placeholder="" value="" name="")
 		//- 		.main-form__wrapper.main-form__wrapper_20
 		//- 			.main-form__fields.nopad-right.nopad-left
 		//- 				.main-form__block.main-form__block_column-2
-		//- 					label.main-form__label Необходимая информация
+		//- 					label.main-form__label.main-form__label_noclick Необходимая информация
 		//- 					input.main-form__input(type="text" placeholder="" value="" name="")
 		//- 		.main-form__wrapper.main-form__wrapper_40
 		//- 			.main-form__fields.main-form__fields_3.nopad-left
 		//- 				.main-form__block
-		//- 					label.main-form__label От кого
+		//- 					label.main-form__label.main-form__label_noclick От кого
 		//- 					input.main-form__input(type="text" placeholder="" value="" name="")
 		//- 	.main-form__add-buyer#add-red
 		//- 		span Добавить
