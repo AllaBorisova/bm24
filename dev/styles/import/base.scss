@@ -381,11 +381,14 @@ body {
   .main-form__input + .main-form__label {
     margin-top: 12px;
   }
-  .main-form__label + .main-form__block_flex{
+  .main-form__label + .main-form__block_flex, .main-form__block_flex + .main-form__block{
     margin-top: 12px;
   }
   .main-form__input + .main-form__input{
     margin-top: 12px;
+  }
+  .main-form__block .main-form__block{
+    margin-bottom: 12px;
   }
 
   .circle-blue {
