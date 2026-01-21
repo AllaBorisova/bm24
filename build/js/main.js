@@ -72,7 +72,16 @@ buttonReason?.addEventListener('click', function (e) {
 
 const radioButtons = document.querySelectorAll('.change-radio');
 radioButtons?.forEach(function(radio) {
-    radio.addEventListener('change', function(e) {
-      e.target.closest('.custom-radio').nextElementSibling.removeAttribute('disabled');
+  radio.addEventListener('click', function (e) {
+    const radioElm = e.target;
+    const element = e.target.closest( '.custom-radio' ).nextElementSibling;
+    if (element.hasAttribute('disabled')) {
+      element.removeAttribute('disabled');
+      radioElm.checked = true;
+    } else {
+      element.setAttribute('disabled', '');
+      radioElm.checked = false;
+    }
+      // e.target.closest('.custom-radio').nextElementSibling.removeAttribute('disabled');
     });
 } );
